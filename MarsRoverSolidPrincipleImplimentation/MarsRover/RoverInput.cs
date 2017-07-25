@@ -5,7 +5,10 @@ namespace MarsRover
     {
         public int XCoOrdinate { get; set; }
         public int YCoOrdinate { get; set; }
+
         Mars mars = new Mars();
+
+
         public RoverInput(int XCoOrdinate = 0 , int YCoOrdinate = 0)
         {
             this.XCoOrdinate = XCoOrdinate;

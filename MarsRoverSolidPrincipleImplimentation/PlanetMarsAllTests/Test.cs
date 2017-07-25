@@ -26,14 +26,6 @@ namespace PlanetMarsAllTests
             Assert.AreEqual(150, mars.Breadth);
         }
 
-		[Test()]
-		public void To_Check_For_The_Entered_Breadth_Of_Planet_()
-		{
-			Mars mars = new Mars(100, 150);
-
-			Assert.AreNotEqual(100, mars.Breadth);
-			Assert.AreEqual(150, mars.Breadth);
-		}
 
 	}   
 
