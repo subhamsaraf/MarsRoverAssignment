@@ -10,7 +10,7 @@ namespace PlanetMarsAllTests
         [Test()]
         public void To_Check_For_The_Entered_Length_Of_Planet_Mars()
         {
-            Mars mars = new Mars(100, 150);
+            Map mars = new Map(100, 150);
 
             Assert.AreNotEqual(150, mars.Length);
             Assert.AreEqual(100, mars.Length);
@@ -20,7 +20,7 @@ namespace PlanetMarsAllTests
         [Test()]
         public void To_Check_For_The_Entered_Breadth_Of_Planet_Mars()
         {
-            Mars mars = new Mars(100, 150);
+            Map mars = new Map(100, 150);
 
             Assert.AreNotEqual(100, mars.Breadth);
             Assert.AreEqual(150, mars.Breadth);

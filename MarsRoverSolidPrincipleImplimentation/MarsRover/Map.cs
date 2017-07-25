@@ -1,15 +1,16 @@
 ﻿using System;
 namespace MarsRover
 {
-    public class Mars
+    public class Map
     {
         public int Length;
         public int Breadth;
 
-        public Mars(int length = 100, int breadth = 150)
+        public Map(int length =100, int breadth=150)
         {
             this.Length = length;
             this.Breadth = breadth;
         }
+      
     }
 }
