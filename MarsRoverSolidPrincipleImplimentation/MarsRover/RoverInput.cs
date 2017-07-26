@@ -15,7 +15,7 @@ namespace MarsRover
         public bool IsCheckPositionOfRoverValid(Map mars,int XCoOrdinate = 0 , int YCoOrdinate = 0)
         {
             bool isValidXCoOrdinate = XCoOrdinate >= 0 && XCoOrdinate <= mars.Length;
-            bool isValidYCoOrdinate = YCoOrdinate >= 0 && YCoOrdinate <= mars.Breadth;
+            bool isValidYCoOrdinate = YCoOrdinate >= 0 && YCoOrdinate < mars.Breadth;
             if(isValidXCoOrdinate && isValidYCoOrdinate)
             {
                 return true;

@@ -187,5 +187,28 @@ namespace PlanetMarsAllTests
 
 
         }
+
+
+		[Test()]
+		public void To_Check_For_The_Movements_Of_Rover_LMLMMMLRRM()
+		{
+			Map map = new Map(5, 6);
+			RoverInput roverInput = new RoverInput(2, 3);
+            RoverMoment roverMovement = new RoverMoment(roverInput, EnumDirection.South, map);
+            roverMovement.Left();
+			roverMovement.Move();
+            roverMovement.Left();
+			roverMovement.Move();
+			roverMovement.Move();
+            roverMovement.Left();
+            roverMovement.Right();
+            roverMovement.Right();
+            roverMovement.Move();
+			Assert.AreEqual(4, roverInput.XCoOrdinate);
+			Assert.AreEqual(5, roverInput.YCoOrdinate);
+            Assert.AreEqual(EnumDirection.East, roverMovement.FacingDirection);
+
+
+		}
     }
 }

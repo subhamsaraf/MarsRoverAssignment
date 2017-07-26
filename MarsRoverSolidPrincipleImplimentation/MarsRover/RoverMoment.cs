@@ -18,7 +18,7 @@ namespace MarsRover
             this.mars = mars;
 
         }
-
+        Field
 
         public void Left()
         {
